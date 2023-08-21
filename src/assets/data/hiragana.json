@@ -630,12 +630,12 @@
     "kanji": "驚く"
   },
   { "kana": ["あ", "う"], "translation": "to meet, to interview", "kanji": "会う" },
-  { "kana": ["あ", "け", "る"], "translation": "to opentr, to unwraptr", "kanji": "開ける" },
+  { "kana": ["あ", "け", "る"], "translation": "to open, to unwrap", "kanji": "開ける" },
   { "kana": ["あ", "そ", "ぶ"], "translation": "to play", "kanji": "遊ぶ" },
-  { "kana": ["あ", "つ", "ま", "る"], "translation": "to gatherin", "kanji": "集まる" },
+  { "kana": ["あ", "つ", "ま", "る"], "translation": "to gather, to collect", "kanji": "集まる" },
   { "kana": ["う", "る"], "translation": "to sell", "kanji": "売る" },
   { "kana": ["え", "る"], "translation": "to obtain [some benefit or knowledge]", "kanji": "得る" },
-  { "kana": ["お", "る"], "translation": "to breaktr, to foldtr", "kanji": "折る" },
+  { "kana": ["お", "る"], "translation": "to break, to fold", "kanji": "折る" },
   { "kana": ["か", "う"], "translation": "to buy", "kanji": "買う" },
   { "kana": ["き", "る"], "translation": "to cut", "kanji": "切る" },
   { "kana": ["き", "る"], "translation": "to wear [on the upper body]", "kanji": "着る" },
@@ -646,7 +646,7 @@
     "translation": "to exchange, to substitute, to replace",
     "kanji": "代える"
   },
-  { "kana": ["し", "め", "る"], "translation": "to closetr", "kanji": "閉める" },
+  { "kana": ["し", "め", "る"], "translation": "to close, to shut", "kanji": "閉める" },
   { "kana": ["し", "め", "る"], "translation": "to tie, to fasten", "kanji": "締める" },
   { "kana": ["し", "め", "る"], "translation": "to comprise, to account for", "kanji": "占める" },
   { "kana": ["し", "る"], "translation": "to know", "kanji": "知る" },
@@ -661,12 +661,12 @@
   },
   {
     "kana": ["わ", "か", "れ", "る"],
-    "translation": "to split intoin, to be divided",
+    "translation": "to split into, to be divided",
     "kanji": "分かれる"
   },
   {
     "kana": ["わ", "か", "れ", "る"],
-    "translation": "to partin, to separatein, to break upin",
+    "translation": "to part, to separate, to break up",
     "kanji": "別れる"
   },
   { "kana": ["も", "う"], "translation": "already" },
