@@ -16,7 +16,7 @@
               value: 'katakana'
             }
           ]"
-          v-model="store.tableType"
+          v-model="store.table"
         />
         <button
           class="ml-auto btn-round text-gray-500 focus:bg-gray-300 hover:bg-gray-300 dark:focus:bg-gray-800 dark:hover:bg-gray-800"
@@ -26,7 +26,7 @@
           <IconX class="w-6 h-6" />
         </button>
       </div>
-      <TableHiragana class="mt-8" :katakana="store.tableType === 'katakana'" />
+      <TableHiragana class="mt-8" :katakana="store.table === 'katakana'" />
       <p class="text-sm mt-4 text-gray-400">
         This app uses Hepburn romanization, although may support switching to Nihon-shiki in the
         future.

@@ -3,18 +3,14 @@ import { defineStore } from 'pinia';
 
 export const useStore = defineStore('base', () => {
   const count = ref(0);
-
+  const words = ref<'all' | 'hiragana' | 'katakana'>('all');
   const modal = ref<'kana' | 'settings' | null>(null);
-
-  const tableType = ref<'hiragana' | 'katakana'>('hiragana');
-  const setTableType = (kana: typeof tableType.value) => {
-    tableType.value = kana;
-  };
+  const table = ref<'hiragana' | 'katakana'>('hiragana');
 
   return {
     count,
     modal,
-    setTableType,
-    tableType
+    table,
+    words
   };
 });

@@ -14,13 +14,30 @@
         </button>
       </div>
 
-      <p class="text-sm mt-2 text-gray-400">
-        This app is freshly made and missing lots of features, including settings. More coming soon,
-        hopefully!
-      </p>
-      <p class="text-sm mt-2 text-gray-400">
+      <div class="w-full flex justify-start items-center gap-2 my-4">
+        <div class="text-sm text-gray-500">Practice:</div>
+        <BaseTabs
+          class="text-sm"
+          :options="[
+            {
+              title: 'All',
+              value: 'all'
+            },
+            {
+              title: 'Hiragana',
+              value: 'hiragana'
+            },
+            {
+              title: 'Katakana',
+              value: 'katakana'
+            }
+          ]"
+          v-model="store.words"
+        />
+      </div>
+      <p class="text-xs mt-2 text-gray-500">
         Built by
-        <a class="text-blue-500" href="https://rupertdunk.com" target="_blank"> rdunk</a>.
+        <a class="text-lime-500" href="https://rupertdunk.com" target="_blank"> rdunk</a>.
       </p>
     </div>
   </BaseOverlay>

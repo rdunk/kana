@@ -33,8 +33,15 @@ const store = useStore();
 
 const randomInt = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-const dictionary = shallowRef<Array<KanaEntry>>([...hiraganaDictionary, ...katakanaDictionary]);
-// const dictionary: Array<KanaEntry> = hiraganaDictionary
+const dictionary = computed<KanaEntry[]>(() => {
+  if (store.words === 'hiragana') {
+    return hiraganaDictionary;
+  }
+  if (store.words === 'katakana') {
+    return katakanaDictionary;
+  }
+  return [...hiraganaDictionary, ...katakanaDictionary];
+});
 
 const allMaps = [...hiraganaMap, ...katakanaMap];
 
@@ -48,15 +55,12 @@ const word = computed<KanaEntryWithRoumaji>(() => {
     roumaji
   };
 });
-// const roumaji = computed(() => word.value.kana.map(mapKana(allMaps)));
-// const roumaji = computed(() => word.value.kana.map(mapKana(allMaps)));
-// const match = computed(() => roumaji.value.join(""));
-const correctCount = ref(0);
-// setInterval(() => (count.value += 1), 600);
+
 const isMatch = computed(() => {
   const match = word.value.roumaji.join('');
   return input.value.replace(/ /g, '') === match;
 });
+
 const onSubmit = () => {
   if (isMatch.value) {
     store.count += 1;
@@ -68,5 +72,8 @@ watch(
   () => index.value,
   () => (input.value = '')
 );
+
+watch(dictionary, (dict) => {
+  index.value = randomInt(0, dict.length - 1);
+});
 </script>
-@/stores/base
