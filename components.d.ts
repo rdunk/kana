@@ -9,6 +9,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     AppHeader: typeof import('./src/components/AppHeader.vue')['default']
     BaseOverlay: typeof import('./src/components/BaseOverlay.vue')['default']
+    BaseTabs: typeof import('./src/components/BaseTabs.vue')['default']
     Counter: typeof import('./src/components/Counter.vue')['default']
     Icon: typeof import('./src/components/icons/Icon.vue')['default']
     IconArrow: typeof import('./src/components/icons/IconArrow.vue')['default']
