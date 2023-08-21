@@ -1,0 +1,136 @@
+.tr-fade-enter-active,
+.tr-fade-leave-active {
+  transition:
+    opacity 250ms ease,
+    transform 250ms ease;
+}
+.tr-fade-enter-from,
+.tr-fade-leave-to {
+  opacity: 0;
+}
+.tr-answer-enter-active {
+  transition:
+    opacity 400ms ease,
+    transform 400ms ease;
+}
+.tr-answer-leave-active {
+  transition:
+    opacity 0ms ease,
+    transform 0ms ease;
+}
+
+.tr-answer-enter-from,
+.tr-answer-leave-to {
+  opacity: 0;
+  transform: translateY(-0.2em);
+}
+
+.tr-swipe-top-enter-active,
+.tr-swipe-top-leave-active,
+.tr-swipe-right-enter-active,
+.tr-swipe-right-leave-active,
+.tr-swipe-bottom-enter-active,
+.tr-swipe-bottom-leave-active,
+.tr-swipe-left-enter-active,
+.tr-swipe-left-leave-active {
+  transition:
+    opacity 250ms ease,
+    transform 250ms ease;
+}
+
+.tr-swipe-top-enter-from,
+.tr-swipe-top-leave-to {
+  opacity: 0;
+  transform: translateY(1em);
+}
+
+.tr-swipe-right-enter-from,
+.tr-swipe-right-leave-to {
+  opacity: 0;
+  transform: translateX(1em);
+}
+
+.tr-swipe-bottom-enter-from,
+.tr-swipe-bottom-leave-to {
+  opacity: 0;
+  transform: translateY(-1em);
+}
+
+.tr-swipe-left-enter-from,
+.tr-swipe-left-leave-to {
+  opacity: 0;
+  transform: translateX(-1em);
+}
+
+.tr-display-enter-active,
+.tr-display-leave-active {
+  transition:
+    opacity 250ms ease,
+    transform 250ms ease;
+}
+
+.tr-display-enter-from {
+  opacity: 0;
+  transform: translateY(-1em);
+}
+.tr-display-leave-to {
+  opacity: 0;
+  transform: translateY(1em);
+}
+
+.tr-appear-enter-active,
+.tr-appear-leave-active {
+  transition: opacity 1000ms ease;
+}
+
+.tr-appear-enter-from,
+.tr-appear-leave-to {
+  opacity: 0;
+}
+
+.tr-count-enter-active,
+.tr-count-leave-active {
+  transition: transform 400ms ease 400ms;
+}
+.tr-count-enter-from {
+  transform: translateY(100%);
+}
+.tr-count-leave-to {
+  transform: translateY(-100%);
+}
+
+.tr-tip-enter-active {
+  transition:
+    transform 500ms ease 1000ms,
+    opacity 500ms ease 1000ms;
+}
+.tr-tip-leave-active {
+  transition:
+    transform 500ms ease,
+    opacity 500ms ease;
+}
+.tr-tip-enter-from,
+.tr-tip-leave-to {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.tr-sunset-enter-active {
+  transform-origin: 50% 150%;
+  transition:
+    opacity 300ms easeOutExpo,
+    transform 300ms easeOutExpo;
+}
+.tr-sunset-leave-active {
+  transform-origin: 50% 150%;
+  transition:
+    opacity 300ms easeInExpo,
+    transform 300ms easeInExpo;
+}
+
+.tr-sunset-enter-from {
+  transform: rotate(90deg);
+}
+.tr-sunset-leave-to {
+  transform: rotate(-90deg);
+}

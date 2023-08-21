@@ -1,0 +1,23 @@
+:root {
+  font-family: 'Inter', sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
+body {
+  @apply bg-gray-100 text-black;
+  @apply dark:bg-gray-900 dark:text-white;
+}
+
+.btn-round {
+  @apply flex justify-center items-center transition-colors outline-none rounded-full w-8 h-8;
+}
+
+.btn-nav {
+  @apply relative border rounded-full shadow transition-colors p-2 overflow-hidden outline-none;
+  @apply bg-white border-gray-200 hover:bg-gray-100 focus-visible:bg-gray-100;
+  @apply dark:bg-gray-900 dark:border-gray-800  dark:hover:bg-gray-800 dark:focus-visible:bg-gray-800;
+}
