@@ -58,7 +58,7 @@ const word = computed<KanaEntryWithRoumaji>(() => {
 
 const isMatch = computed(() => {
   const match = word.value.roumaji.join('');
-  return input.value.replace(/ /g, '') === match;
+  return input.value.toLowerCase().replace(/ /g, '') === match;
 });
 
 const onSubmit = () => {
