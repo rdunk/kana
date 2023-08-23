@@ -5,7 +5,7 @@
   >
     <Transition name="tr-display" mode="out-in">
       <div class="text-center" :key="word.translation">
-        <div class="py-12 sm:text-2xl lg:text-4xl">{{ word.kanji || '&nbsp;' }}</div>
+        <div class="py-4 lg:py-12 sm:text-2xl lg:text-4xl">{{ word.kanji || '&nbsp;' }}</div>
         <div class="text-4xl sm:text-6xl lg:text-kana hover:text-gray-500">
           <KanaPart
             v-for="part in parts"
@@ -14,7 +14,7 @@
             :roumaji="part.roumaji"
           />
         </div>
-        <div class="py-12 text-2xl">
+        <div class="py-4 lg:py-12 text-2xl">
           <Transition name="tr-answer" mode="out-in">
             <div v-if="translation">{{ translation }}</div>
             <div v-else>&nbsp;</div>

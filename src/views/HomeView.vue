@@ -1,10 +1,10 @@
 <template>
   <div class="flex-grow flex flex-col">
-    <div class="fixed top-0 left-0 right-0 px-4 py-6 sm:px-6">
+    <div class="fixed top-0 left-0 right-0 p-4 sm:p-6">
       <AppHeader />
     </div>
     <KanaDisplay class="flex-grow" :word="word" :is-match="isMatch" />
-    <div class="fixed bottom-0 left-0 right-0 px-4 py-6 sm:px-6">
+    <div class="fixed bottom-0 left-0 right-0 p-4 sm:p-6">
       <KanaInput
         :is-match="isMatch"
         :show-tip="store.count === 0 && isMatch"

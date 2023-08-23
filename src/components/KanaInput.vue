@@ -11,7 +11,7 @@
 
     <input
       ref="inputEl"
-      class="py-3 px-4 w-full outline-none text-center bg-transparent text-black dark:text-white"
+      class="py-2 sm:py-3 px-4 w-full outline-none text-center bg-transparent text-black dark:text-white"
       type="text"
       spellcheck="false"
       placeholder="type rōmaji here ..."
