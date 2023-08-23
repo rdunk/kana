@@ -1,10 +1,10 @@
 <template>
   <div class="flex-grow flex flex-col">
-    <div class="px-4 py-6 sm:px-6">
+    <div class="fixed top-0 left-0 right-0 px-4 py-6 sm:px-6">
       <AppHeader />
     </div>
     <KanaDisplay class="flex-grow" :word="word" :is-match="isMatch" />
-    <div class="px-4 py-6 sm:px-6">
+    <div class="fixed bottom-0 left-0 right-0 px-4 py-6 sm:px-6">
       <KanaInput
         :is-match="isMatch"
         :show-tip="store.count === 0 && isMatch"
@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, ref, shallowRef, watch } from 'vue';
+import { computed, ref, watch } from 'vue';
 import type { KanaEntry, KanaEntryWithRoumaji } from '@/types';
 import hiraganaDictionary from '@/assets/data/hiragana.json';
 import katakanaDictionary from '@/assets/data/katakana.json';
