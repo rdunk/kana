@@ -15,6 +15,4 @@ pnpm run dev
 
 The libraries of words currently used are pretty basic and could do with improving and expanding. The application currently loads them in their entirety from JSON into memory, which might not be sensible if they get too large.
 
-It would be nice to have some feedback, statistics, etc.
-
-Feel free to submit PRs if interested in contributing.
+Statistics and general feedback for the user would be a nice to have.
